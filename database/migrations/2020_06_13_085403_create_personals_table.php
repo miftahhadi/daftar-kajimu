@@ -15,18 +15,16 @@ class CreatePersonalsTable extends Migration
     {
         Schema::create('personals', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('registrant_id')->constrained();
+            $table->foreignId('registrant_id')->constrained()->cascadeOnDelete();
             $table->string('nama');
-            $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
             $table->string('jenis_kelamin');
-            $table->string('alamat_asal');
-            $table->string('alamat_jogja');
-            $table->string('nomor_wa');
+            $table->string('domisili')->nullable();
             $table->string('email');
-            $table->string('pekerjaan');
-            $table->string('kesibukan');
-            $table->text('motivasi');
+            $table->string('nomor_wa');
+            $table->string('pekerjaan')->nullable();
+            $table->string('pernah_haji')->nullable();
+            $table->text('motivasi')->nullable();
             $table->timestamps();
 
             $table->index('registrant_id');

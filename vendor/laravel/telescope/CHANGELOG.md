@@ -1,6 +1,39 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/telescope/compare/v3.5.0...3.x)
+## [Unreleased](https://github.com/laravel/telescope/compare/v4.1.0...4.x)
+
+
+## [v4.1.0 (2020-10-06)](https://github.com/laravel/telescope/compare/v4.0.1...v4.1.0)
+
+### Added
+- Dump visibility toggling, search, etc ([#959](https://github.com/laravel/telescope/pull/959))
+
+
+## [v4.0.1 (2020-09-22)](https://github.com/laravel/telescope/compare/v4.0.0...v4.0.1)
+
+### Fixed
+- Support new listeners syntax ([a69fc6f](https://github.com/laravel/telescope/commit/a69fc6f4f5fd5b0ac5a242981e162774cbb69e17))
+
+
+## [v4.0.0 (2020-09-08)](https://github.com/laravel/telescope/compare/v3.5.1...v4.0.0)
+
+### Added
+- Laravel 8 support & Batches support ([#903](https://github.com/laravel/telescope/pull/903))
+
+### Fixed
+- May be written to an empty log ([#930](https://github.com/laravel/telescope/pull/930))
+
+### Removed 
+- Laravel 6 & 7 support ([#860](https://github.com/laravel/telescope/pull/860))
+- PHP 7.2 support ([3c3883d](https://github.com/laravel/telescope/commit/3c3883d5bf64fd9f960ffeb1557d5f8ce370bbde))
+
+
+## [v3.5.1 (2020-07-28)](https://github.com/laravel/telescope/compare/v3.5.0...v3.5.1)
+
+### Fixed
+- Change text for Marking Exceptions as Resolved ([#916](https://github.com/laravel/telescope/pull/916))
+- Add explicit base font family fallback ([#920](https://github.com/laravel/telescope/pull/920))
+- Remove problematic unused code when formatting SQL ([#924](https://github.com/laravel/telescope/pull/924))
 
 
 ## [v3.5.0 (2020-05-14)](https://github.com/laravel/telescope/compare/v3.4.0...v3.5.0)

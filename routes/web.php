@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('Front')->group(function () {
     Route::get('/', 'FormController@index')->name('form.index');
-    Route::get('/konfirmasi/{kode}', 'FormController@konfirmasi')->name('form.konfirmasi');
+    Route::get('/sukses/{kode}', 'FormController@konfirmasi')->name('form.sukses');
     Route::get('/detail/{kode}', 'FormController@show')->name('form.show');
     Route::post('/submit', 'FormController@store')->name('form.submit');
 });

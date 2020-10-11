@@ -24,7 +24,7 @@
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Portal Pendaftaran Ma'had al 'Ilmi</title>
+  <title>{{ ($title) ? $title . ' | ' : '' }}Pendaftaran KAJIMU Angkatan 5</title>
 
 
   <!-- Favicon -->
@@ -35,8 +35,6 @@
   <link rel="stylesheet" href="/assets/vendor/nucleo/css/nucleo.css" type="text/css">
   <link rel="stylesheet" href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Page plugins -->
-  <link rel="stylesheet" href="/assets/vendor/fullcalendar/dist/fullcalendar.min.css">
-  <link rel="stylesheet" href="/assets/vendor/sweetalert2/dist/sweetalert2.min.css">
   <!-- Argon CSS -->
   <link rel="stylesheet" href="/css/dashboard.css" type="text/css">
 

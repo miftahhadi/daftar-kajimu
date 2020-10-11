@@ -16,6 +16,8 @@ class CreateRegistrantsTable extends Migration
         Schema::create('registrants', function (Blueprint $table) {
             $table->id();
             $table->string('random_char')->unique();
+            $table->tinyInteger('confirmed')->default(0);
+            $table->string('confirmed_by')->nullable();
             $table->timestamps();
         });
     }

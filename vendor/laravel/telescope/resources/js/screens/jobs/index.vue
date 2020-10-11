@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <index-screen title="Jobs" resource="jobs">
+    <index-screen title="Jobs" resource="jobs" show-all-family="true">
         <tr slot="table-header">
             <th scope="col">Job</th>
             <th scope="col">Status</th>
