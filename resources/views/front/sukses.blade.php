@@ -32,7 +32,7 @@
                             
                         <div class="row mx-3 justify-content-center">
                             <h2>Apa yang selanjutnya dilakukan?</h2>
-                            <p>Konfirmasikan pendaftaran Anda dengan mengirimkan kode pendaftaran Anda melalui WhatsApp ke nomor <a href="{{ 'https://api.whatsapp.com/send?phone=6285214971094&text=' . $registrant->random_char }}">0852 1497 1094</a></p>
+                            <p>Konfirmasikan pendaftaran Anda dengan mengirimkan kode pendaftaran Anda melalui WhatsApp ke nomor <a href="{{ 'https://api.whatsapp.com/send?phone=6282132007820&text=' . $registrant->random_char }}">0821 3200 7820</a></p>
                         </div>
 
                         <div class="row justify-content-center mb-3">

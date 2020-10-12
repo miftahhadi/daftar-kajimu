@@ -33,5 +33,3 @@ Route::group([
 });
 
 Route::get('/logout', 'LogoutController@logout')->name('logout');
-
-Route::get('/konfirmasi', 'API\KonfirmasiController@konfirm');
