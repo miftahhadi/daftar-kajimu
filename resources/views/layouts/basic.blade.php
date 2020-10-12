@@ -24,8 +24,11 @@
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>{{ ($title) ? $title . ' | ' : '' }}Pendaftaran KAJIMU Angkatan 5</title>
-
+  @if (request()->route()->named('login'))
+    <title>Login | Pendaftaran KAJIMU Angkatan 5</title>
+  @else 
+    <title>{{ $title ? $title . ' | ' : '' }}Pendaftaran KAJIMU Angkatan 5</title>
+  @endif
 
   <!-- Favicon -->
   <link rel="icon" href="/assets/img/brand/favicon.png" type="image/png">

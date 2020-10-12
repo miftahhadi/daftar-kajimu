@@ -19,6 +19,8 @@ class AdminController extends Controller
     {
 
         $admin = auth()->user();
+
+        $title = 'Admin Dashboard';
         
         $dashboard = new AdminDashboard($admin);
 
@@ -30,6 +32,6 @@ class AdminController extends Controller
 
         $totalPendaftar = Registrant::count();
         
-        return view('admin.admin', compact('personals', 'urutan', 'load', 'totalPendaftar'));
+        return view('admin.admin', compact('title', 'personals', 'urutan', 'load', 'totalPendaftar'));
     }
 }

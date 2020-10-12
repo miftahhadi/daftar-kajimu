@@ -66,7 +66,7 @@
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-                <a href="{{ route('admin') }}"><img src="/assets/img/brand/logo-white.png" alt="" class="mb-6"></a>
+                <a href="{{ route('admin') }}"><img src="/assets/img/brand/logo-white.png" alt="" class="mb-6" style="max-width: 300px;"></a>
               <h2 class="h2 text-white d-inline-block mb-0">Portal Pendaftaran Ma'had al-'Ilmi</h6>
               <!--<nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">

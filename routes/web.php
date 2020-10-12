@@ -32,4 +32,4 @@ Route::group([
 
 });
 
-Route::get('/logout', 'LogoutController@logout')->name('logout');
+Route::get('/logout', 'LogoutController@logout')->name('signout');
