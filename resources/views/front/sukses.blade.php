@@ -38,7 +38,7 @@
                         <div class="row justify-content-center mb-3">
 
                             <div class="col-md-6">
-                                <a href="{{ 'https://api.whatsapp.com/send?phone=6285214971094&text=' . $registrant->random_char }}" target="_blank" class="btn btn-success">Klik di sini untuk konfirmasi</a>
+                                <a href="{{ 'https://api.whatsapp.com/send?phone=6282132007820&text=' . $registrant->random_char }}" target="_blank" class="btn btn-success">Klik di sini untuk konfirmasi</a>
                             </div>
 
                         </div>
