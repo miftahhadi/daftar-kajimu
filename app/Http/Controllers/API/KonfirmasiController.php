@@ -12,9 +12,9 @@ class KonfirmasiController extends Controller
     {
         $data = $request->all();
 
-        $message = $data['senderMessage'];
+        $message = $data['message'];
 
-        $senderNumber = $data['senderName'];
+        $sender = $data['sender'];
 
         $registrant = Registrant::where('random_char', 'like', '%' . $message . '%')->first();
 
@@ -25,7 +25,7 @@ class KonfirmasiController extends Controller
 
             $registrant->update([
                 'confirmed' => 1,
-                'confirmed_by' => $senderNumber
+                'confirmed_by' => $sender
             ]);
 
             $responseMsg = "Terima kasih $sapaan " . $registrant->personal->nama . " telah mendaftar pada program KAJIMU Angkatan 5. Saat ini kami masih dalam proses mengumpulkan data pendaftar. Insya Allah kami akan mengirimkan pengumuman lanjutan setelah penutupan pendaftara (30 Oktober 2020).";
