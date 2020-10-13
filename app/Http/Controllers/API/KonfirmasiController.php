@@ -28,7 +28,7 @@ class KonfirmasiController extends Controller
                 'confirmed_by' => $senderNumber
             ]);
 
-            $responseMsg = "Terima kasih $sapaan " . $registrant->personal->nama . " telah mendaftar pada program KAJIMU Angkatan 5. Saat ini kami masih dalam proses mengumpulkan data pendaftar. Insya Allah kami akan mengirimkan pengumuman lanjutan setelah penutupan pendaftara (30 Oktober 2020).";
+            $responseMsg = "Terima kasih $sapaan " . $registrant->personal->nama . " telah mendaftar pada program KAJIMU Angkatan 5. Saat ini kami masih dalam proses mengumpulkan data pendaftar. Insya Allah kami akan mengirimkan pengumuman lanjutan setelah penutupan pendaftaran (30 Oktober 2020).";
         }
 
         $exist = !is_null($registrant) ? 'Ada' : 'Tidak ada';
