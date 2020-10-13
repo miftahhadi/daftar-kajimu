@@ -10,7 +10,7 @@ class FormService
 {
     public function store($data)
     {
-        $registrant =Registrant::create(['random_char' => Str::random(10)]);
+        $registrant =Registrant::create(['random_char' => 'KJ' . Str::random(8)]);
 
         $data['tanggal_lahir'] = $this->formatTanggalLahir($data['tanggal_lahir']);
 
