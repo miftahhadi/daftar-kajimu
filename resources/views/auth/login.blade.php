@@ -4,20 +4,7 @@
   <!-- Main content -->
   <div class="main-content">
     <!-- Header -->
-    <div class="header bg-mahadilmi py-7 py-lg-8 pt-lg-9">
-        <div class="container">
-            <div class="header-body text-center mb-7">
-                <div class="row justify-content-center">
-                    <img src="/assets/img/brand/logo-white.png" alt="Logo Ma'had al 'Ilmi" class="mb-4">
-                    <div class="col-xl-10 col-lg-8 col-md-10 px-5">
-                        <h1 class="text-white">Pendaftaran Santri Baru Ma'had Al-'Ilmi Yogyakarta</h1>
-                        <p class="text-lead text-white">Tahun Ajaran 1441 - 1442 H</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('front._header')
     <!-- Page content -->
     <div class="container mt--9 pb-5">
       <!-- Table -->
