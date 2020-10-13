@@ -67,7 +67,7 @@
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
                 <a href="{{ route('admin') }}"><img src="/assets/img/brand/logo-white.png" alt="" class="mb-6" style="max-width: 300px;"></a>
-              <h2 class="h2 text-white d-inline-block mb-0">Portal Pendaftaran Ma'had al-'Ilmi</h6>
+              <h2 class="h2 text-white d-inline-block mb-0">Portal Pendaftaran KAJIMU Angkatan 5</h6>
               <!--<nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                   <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
@@ -148,6 +148,7 @@
                             <th scope="col">Nama</th>
                             <th scope="col">Jenis Kelamin</th>
                             <th scope="col">Waktu Pendaftaran</th>
+                            <th scope="col">Dikonfirmasi oleh</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
@@ -162,6 +163,7 @@
                             <td>{{ $pendaftar->nama }}</td>
                             <td>{{ $pendaftar->jenis_kelamin  }}</td>
                             <td>{{ $pendaftar->registrant->created_at }}</td>
+                            <td>{{ $pendaftar->registrant->confirmed_by }}</td>
                             <td>
                                 <div class="btn-list ml-auto">
                                     <a href="{{ route('form.show', [ 'kode' => $pendaftar->registrant->random_char ]) }}" class="btn btn-primary btn-sm" target="_blank">Lihat Data</a>
