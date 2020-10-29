@@ -158,7 +158,12 @@
                             
                             <div class="form-group">
                                 <label for="pendaftar[motivasi]">Apa motivasi Anda mengikuti KAJIMU?</label>
-                                <textarea class="form-control form-control-alternative " id="pendaftar[motivasi]" rows="3" placeholder="Motivasi mengikuti KAJIMU"></textarea>
+                                <textarea class="form-control form-control-alternative " 
+                                            id="pendaftar[motivasi]" 
+                                            rows="3" 
+                                            placeholder="Motivasi mengikuti KAJIMU"
+                                            name="pendaftar[motivasi]"
+                                >{{ old('pendaftar.motivasi') }}</textarea>
                             </div>
 
                         </div>

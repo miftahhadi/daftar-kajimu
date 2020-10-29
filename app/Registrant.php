@@ -13,28 +13,4 @@ class Registrant extends Model
         return $this->hasOne(Personal::class);
     }
 
-    public function educations()
-    {
-        return $this->hasMany(Education::class);
-    }
-
-    public function organizations()
-    {
-        return $this->hasMany(Organization::class);
-    }
-
-    public function religious_study()
-    {
-        return $this->hasOne(ReligiousStudy::class);
-    }
-
-    public function documents()
-    {
-        return $this->hasMany(Document::class);
-    }
-
-    public function statement()
-    {
-        return $this->hasOne(Statement::class);
-    }
 }
