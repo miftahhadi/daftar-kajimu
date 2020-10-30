@@ -22,8 +22,8 @@ class FormController extends Controller
 
     public function index()
     {
-        return view('front.form', [
-            'title' => ''
+        return view('front.tutup', [
+            'title' => 'Pendaftaran Ditutup'
         ]);
     }
 

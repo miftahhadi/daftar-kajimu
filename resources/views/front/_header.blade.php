@@ -14,7 +14,7 @@
             </div>
         </div>
         
-    @if (request()->route()->named('form.index'))
+    {{-- @if (request()->route()->named('form.index'))
         <div class="row justify-content-center mt-5">
             <a href="#daftar" 
                 class="btn mb-2 mr-2 btn-success"
@@ -52,7 +52,7 @@
 
             </div>
         </div>
-    @endif
+    @endif --}}
 
     </div>
 </div>
